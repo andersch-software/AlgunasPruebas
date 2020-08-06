@@ -1,12 +1,80 @@
-.borde{
-    border-radius: 12px;
+html, body {
+  margin:0;
+  padding:0;
+  width:100;
 }
 
-.letra{
-    color:white;
+body {
+  height:100vh;
+  background:#151519;
+  }
+
+button{
+  position:absolute;
+  top:110px;
+  left:50px;
+  transform: translate(200%,50%);
+
 }
 
-#imagenes{
-    width: 300px;
-    height:300px;
+button{
+  background: none;
+  color:#ccc;
+  width:240px;
+  height:80px;
+  border:1px solid #338033;
+  font-size:18px;
+  border-radius:4px;
+  transition:.6s;
+  overflow: hidden;
+
+}
+
+button:focus{
+    outline:none;
+}
+
+button:before{
+  content:"";
+  display:block;
+  position:absolute;
+  background:rgba(255,255,255,5);
+  width:60px;
+  height:100px;
+  left:0;
+  top:0;
+  opacity:.5s;
+  filter:blur(30px);
+  transform:translateX(-130px)skewX(-15deg);
+}
+
+button:after{
+    content:"";
+    display:block;
+    position:absolute;
+    background:rgba(255,255, 255, 0.2);
+    width:30px;
+    height:100%;
+    left:30px;
+    top:0;
+    filter:blur(30px);
+    transform:translateX(-100)scaleX(-15deg);
+}
+
+button:hover{
+    background:#338033;
+    opacity:.6;
+    transition:.7s;
+  }
+
+button:hover:before{
+    transform:translateX(300px) skewX(-15deg);
+    opacity:.6;
+    transition:.7s;
+  }
+
+button:hover:after{
+  transform: translateX(300px)skewX(-15deg);
+  opacity:1;
+  transition:.7s;
 }
