@@ -1,0 +1,579 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>NYSL App</title>
+    <!--Icono-->
+    <link rel="shortcut icon" sizes="196x196" href="imagenes/logo.png">
+    <!--Para que no se vea la barra de direcciones-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel=StyleSheet href="css/estilos.css" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!--HOME-->
+        <div class="row" id="home">
+            <div class="col-12">
+
+                <div class="p-3 mb-2 text-white" id="borde">
+                    <div class="row" class="distarriba">
+
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <img src="imagenes/logo.png" alt="logo" class="logo">
+                            </div>
+                        </div>
+
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-secondary btn-lg" disabled>HOME</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-lg btn-primary" onclick="about()">About</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="game()">Game</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="contact()">Contact</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="imagenes/chicos.jpg" class="card-img-top" alt="imagen">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Seasons
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card-body">
+                                        <h2>August 4</h2>
+                                        <p class="indent">NYSL Fundraiser</p>
+                                        <h2>August 16</h2>
+                                        <p class="indent">Season Kick-off: Meet the Teams</p>
+                                        <h2>September 1</h2>
+                                        <p class="indent"> First Game of the Season (Check Game Schedule for details)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-info"><a href="foro.html"
+                                    class="letra2">Forum</a></button>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+        <!--HOME-->
+
+        <!--ABOUT-->
+        <div class="row" id="about">
+            <div class="col-12">
+
+                <div class="p-3 mb-2 text-white" id="borde">
+                    <div class="row" class="distarriba">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <img src="imagenes/logo.png" alt="logo" class="logo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-secondary btn-lg" disabled>ABOUT</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-lg btn-primary" onclick="home()">Home</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="game()">Game</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="contact()">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="imagenes/amistad.jpg" class="card-img-top" alt="imagen">
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Mission
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <h3>Mission</h3>
+                                                <p>To support young athletes living in Chicago's northside
+                                                    neighborhoods,
+                                                    who have an interest
+                                                    in learning and playing soccer, with opportunities to learn and
+                                                    practice
+                                                    skills related to
+                                                    the game of soccer, specifically those skills around team
+                                                    cooperation
+                                                    and good
+                                                    sportsmanship.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Vision
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <h3>Vision</h3>
+                                                <p>The Northside Youth Soccer League aspires to develop strong,
+                                                    well-rounded, and mindful
+                                                    athletes through the building of character, self-discipline, and
+                                                    leadership.</p>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    General
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <h3>General Information</h3>
+                                                <p>The Northside Youth Soccer League was established in 1996 to provide
+                                                    athletes residing in
+                                                    Chicago's northside neighborhoods an environment in which to learn
+                                                    and
+                                                    play soccer. To
+                                                    be a member of NYSL, you must be between the ages of 4 - 12 and
+                                                    reside
+                                                    in a Chicago
+                                                    northside neighborhood. NYSL is run by a small full-time staff, and
+                                                    relies on the
+                                                    generous volunteer time of parents and previous league members.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--ABOUT-->
+
+        <!--GAME-->
+        <div class="row" id="game">
+            <div class="col-12">
+
+                <div class="p-3 mb-2 text-white" id="borde">
+                    <div class="row" class="distarriba">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <img src="imagenes/logo.png" alt="logo" class="logo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-secondary btn-lg" disabled>GAME</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-lg btn-primary" onclick="home()">Home</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="about()">About</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="contact()">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <h2><em>Fall Schedule</em></h2>
+                            <p>*All games take place on Saturday</p>
+
+                            <button type="button" class="btn btn-primary" data-toggle="collapse"
+                                data-target="#demo">Calendar</button>
+                            <div id="demo" class="collapse">
+                                <br />
+
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>SEPTEMBER</th>
+                                            <th>Teams</th>
+                                            <th>Location</th>
+                                            <th>Times</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">9/01</td>
+                                            <td>U1 and U4</td>
+                                            <td>AJ Katzenmaier</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U3 and U2</td>
+                                            <td>Greenbay</td>
+                                            <td>1:00 p.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">9/08</td>
+                                            <td>U5 and U6</td>
+                                            <td>Howard A Yeager</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U6 and U1</td>
+                                            <td>Marjorie P Hart</td>
+                                            <td>1:00 p.m.</td>
+                                        <tr>
+                                            <td rowspan="2">9/15</td>
+                                            <td>U2 and U4</td>
+                                            <td>North</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U3 and U5</td>
+                                            <td>AJ Katzenmaier</td>
+                                            <td>1:00 p.m.</td>
+                                        <tr>
+                                            <td rowspan="2">9/22</td>
+                                            <td>U1 and U3</td>
+                                            <td>South</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U2 and U6</td>
+                                            <td>Howard A Yeager</td>
+                                            <td>1:00 p.m.</td>
+                                        <tr>
+                                            <td>9/29</td>
+                                            <td>U4 and U5</td>
+                                            <td>Greenbay</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>OCTOBER</th>
+                                            <th>Teams</th>
+                                            <th>Location</th>
+                                            <th>Times</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">10/06</td>
+                                            <td>U2 and U5</td>
+                                            <td>Marjorie P Hart</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U1 and U6</td>
+                                            <td>South</td>
+                                            <td>1:00 p.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">10/08</td>
+                                            <td>U3 and U4</td>
+                                            <td>Howard A Yeager</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U5 and U1</td>
+                                            <td>Greenbay</td>
+                                            <td>1:00 p.m.</td>
+                                        <tr>
+                                            <td rowspan="2">10/20</td>
+                                            <td>U6 and U3</td>
+                                            <td>North</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U2 and U4</td>
+                                            <td>Marjorie P Hart</td>
+                                            <td>1:00 p.m.</td>
+                                        <tr>
+                                            <td rowspan="2">10/27</td>
+                                            <td>U3 and U1</td>
+                                            <td>AJ Katzenmaier</td>
+                                            <td>9:30 a.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>U5 and U6</td>
+                                            <td>Howard A Yeager</td>
+                                            <td>1:00 p.m.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    More
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p><br><strong>Facility Type:</strong> Outdoor</p>
+                                                <p><strong>Additional Information:</strong> If deemed necessary by NYSL,
+                                                    games
+                                                    may be shortened or
+                                                    cancelled due to extreme weather conditions.</p>
+                                                <p><strong>Please direct all questions to:</strong> Michael Randall,
+                                                    League
+                                                    Coordinator</p>
+                                                <address>
+                                                    <p><span style="float: left;"><strong>Phone:</strong> (630)
+                                                            690-8132</span>
+                                                    </p>
+                                                    <p style="text-align: right"><strong>Email:</strong> <a
+                                                            href="mailto:michael.randall@chisoccer.org">michael.randall@chisoccer.org</a>
+                                                    </p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Maps
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+
+                                                <h3>AJ Katzenmaier Elementary</h3>
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029688.6691018958!2d-87.94962208653178!3d42.13572604641556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24%20W%20Walton%20St%2C%20Chicago%2C%20IL%2060610%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1590776965054!5m2!1ses-419!2sar"
+                                                    class="map"></iframe>
+
+                                                <h3>Greenbay Elementary</h3>
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734%20N%20Orleans%20St%2C%20Chicago%2C%20IL%2060614%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1590778024040!5m2!1ses-419!2sar"
+                                                    class="map"></iframe>
+
+                                                <h3>Howard A Yeager Elementary</h3>
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846845!2d-87.66511458505448!3d41.92326857056615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245%20N%20Southport%20Ave%2C%20Chicago%2C%20IL%2060614%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1590778091634!5m2!1ses-419!2sar"
+                                                    class="map"></iframe>
+
+                                                <h3>Marjorie P Hart Elementary</h3>
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289530833!2d-87.64808628505426!3d41.929582270170805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625%20N%20Orchard%20St%2C%20Chicago%2C%20IL%2060614%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1590778153716!5m2!1ses-419!2sar"
+                                                    class="map"></iframe>
+
+                                                <h3>North Elementary</h3>
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.337553694978!2d-87.64837698505502!3d41.90710177157858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af0e6ccc3%3A0x26c81c1d557667da!2s1409%20N%20Ogden%20Ave%2C%20Chicago%2C%20IL%2060610%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1590778218605!5m2!1ses-419!2sar"
+                                                    class="map"></iframe>
+
+                                                <h3>South Elementary</h3>
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101%20N%20Fremont%20St%2C%20Chicago%2C%20IL%2060614%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1590778466618!5m2!1ses-419!2sar"
+                                                    class="map"></iframe>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--GAME-->
+
+        <!--CONTACT-->
+        <div class="row" id="contact">
+            <div class="col-12">
+
+                <div class="p-3 mb-2 text-white" id="borde">
+                    <div class="row" class="distarriba">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <img src="imagenes/logo.png" alt="logo" class="logo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-secondary btn-lg" disabled>CONTACT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-lg btn-primary" onclick="home()">Home</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="about()">About</button>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="game()">Game</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-success" role="alert">
+                            <p>Please email us at <a href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a></p>
+                            <p>We will reply to your email as soon as we can.</p>
+                            <p><strong>Please direct all questions to:</strong> Michael Randall, League Coordinator</p>
+                            <address>
+                                <p <span style="float: left;"><strong>Phone:</strong> (630) 690-8132</span></p>
+                                <p style="text-align: right"><strong>Email:</strong> <a
+                                        href="mailto:michael.randall@chisoccer.org">michael.randall@chisoccer.org</a>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            NYSL Ubication
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <h3>Please Visit Us.</h3>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d763932.8593129091!2d-88.137046!3d41.5884439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2746b8a48f4d264!2sChicago%20Fire%20Juniors%20West!5e0!3m2!1ses-419!2sar!4v1594820711449!5m2!1ses-419!2sar"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--CONTACT-->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

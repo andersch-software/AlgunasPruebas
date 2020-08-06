@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Nysl-Foro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body background="imagenes/fondo.jpg">
+  <div class="container" id="mivue">
+    <div class="row" id="sesion">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <img src="imagenes/logo.png" class="rounded mx-auto d-block" alt="logo" width="100px" height="100px">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-12">
+            <!-- <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-success">Log in</button>
+            </div>
+            <br /> -->
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-primary" onclick="loginGoogle()">Google Account</button>
+            </div>
+            <br />
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-info" onclick="checkUser()">Ingresar</button>
+            </div>
+            <br />
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-danger"><a href="index.html">Back</a></button>
+            </div>  
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-12">
+            <marquee>NYSL -- NYSL -- NYSL -- NYSL-- NYSL -- NYSL -- NYSL</marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" id="foro">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <img src="imagenes/logo.png" class="rounded mx-auto d-block" alt="logo" width="100px" height="100px">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-12">
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Forum
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div v-for="x in datos">
+                      <h5 class="alert-heading">{{x}}</h5>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <input class="form-control" type="text" placeholder="Name" id="nombre">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-12">
+            <input class="form-control" type="text" placeholder="Message" id="mensaje">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-12">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="enviar()">
+              Send</button>
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <div class="col-12">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="borrar()">Delete</button>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-danger" onclick="sesion()">Log Out</button>
+            </div>  
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <div class="col-12">
+            <marquee>NYSL -- NYSL -- NYSL -- NYSL-- NYSL -- NYSL -- NYSL</marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--firebase-->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+  <!--firebase-->
+
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <!--Bootstrap-->
+
+  <!--Vue-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!--Vue-->
+
+  <!--JavaScript-->
+  <script src="main.js"></script>
+  <!--JavaScript-->
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+- - Posibles Usuarios:
+
+* Nancy : Madre de un niño que quiere iniciarse dentro del Club, pero 
+al preocuparse por su hijo, quiere conocer Las reglas del juego, y
+contactarse con un representante del mismo, para saber cual es el trato
+con el que lidiaran con su hijo.
+
+* Dario : Tio de uno de los jugares del club, quiere saber en que lugar 
+jugara su sobrino para poder llevarlo, ya que sus padres no pueden 
+asistir por algún motivo, y no conoce el cronograma, debido a que esta
+situación fue repentina e inusual.
+
+* Cristian : Un jugador del Club quiere saber quién sera el equipo rival
+del próximo juego, para prepararse de una mejor manera.

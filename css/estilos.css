@@ -1,0 +1,37 @@
+body{
+    background-image: url(../imagenes/pelota.jpg);
+}
+
+.letra{
+    color:black;
+}
+
+.letra2{
+    color:whitesmoke;
+}
+
+@media only screen and (orientation:landscape){
+    body{
+        background-image: url(../imagenes/fondo.jpg);
+    }
+    .letra{
+        color:whitesmoke;
+    }
+}
+
+#centrado{
+    text-align: center;
+}
+
+.normal{
+    text-decoration: none;
+    color:#002F73;
+}
+#borde{
+    border-radius: 12px;
+}
+.logo{
+    height : 100px;
+}
+
+
